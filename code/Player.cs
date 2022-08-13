@@ -163,11 +163,6 @@ partial class SandboxPlayer : Player
 
 		if ( Input.Released( InputButton.Jump ) )
 		{
-			if ( timeSinceJumpReleased < 0.3f )
-			{
-				Game.Current?.DoPlayerNoclip( cl );
-			}
-
 			timeSinceJumpReleased = 0;
 		}
 
