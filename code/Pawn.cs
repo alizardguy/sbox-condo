@@ -20,7 +20,7 @@ partial class Pawn : AnimatedEntity
 
 		EnableDrawing = true;
 		EnableHideInFirstPerson = true;
-		EnableShadowInFirstPerson = true;
+		EnableShadowInFirstPerson = true; //check what this dose later
 	}
 
 	/// <summary>
