@@ -30,8 +30,8 @@ public partial class SpawnMenu : Panel
 				var ents = body.AddChild<EntityList>();
 				tabs.AddButtonActive( "Entities", ( b ) => ents.SetClass( "active", b ) );
 
-				var models = body.AddChild<CloudModelList>();
-				tabs.AddButtonActive( "s&works", ( b ) => models.SetClass( "active", b ) );
+				//var models = body.AddChild<CloudModelList>();
+				//tabs.AddButtonActive( "s&works", ( b ) => models.SetClass( "active", b ) );
 			}
 		}
 
@@ -40,7 +40,7 @@ public partial class SpawnMenu : Panel
 			var tabs = right.Add.Panel( "tabs" );
 			{
 				tabs.Add.Button( "Tools" ).AddClass( "active" );
-				tabs.Add.Button( "Utility" );
+				//tabs.Add.Button( "Utility" );
 			}
 			var body = right.Add.Panel( "body" );
 			{
