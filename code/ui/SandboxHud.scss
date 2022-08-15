@@ -10,7 +10,7 @@ Health
 	padding: 0 20px;
 	align-items: center;
 	font-family: Poppins;
-	background-color: rgba( #333, 0.4 );
+	background-color: rgba( rgb(54, 11, 52), 0.4 );
 	backdrop-filter: blur( 20px );
 	border-radius: 10px;
 }
@@ -63,13 +63,13 @@ CurrentTool
 
 rootpanel
 {
-	background-color: rgba( #333, 0 );
+	background-color: rgba( rgb(43, 18, 36), 0 );
 	transition: background-color 0.2s ease-in;
 
 	&.spawnmenuopen
 	{
 		transition: background-color 0.3s ease-out;
-		background-color: rgba( #333, 0.9 );
+		background-color: rgba( rgb(37, 37, 37), 0.9 );
 	}
 
 
@@ -98,7 +98,7 @@ InventoryIcon
 	transition: all 0.6s ease-in-out;
 	margin-top: 10px;
 	font-family: poppins;
-	background-color: rgba( #333, 0.3 );
+	background-color: rgba( rgb(58, 28, 40), 0.3 );
 	backdrop-filter: blur( 50px );
 	border-radius: 10px;
 
@@ -131,7 +131,7 @@ InventoryIcon
 
 	&.active
 	{
-		background-color: rgba( #c234e6, 1 );
+		background-color: rgba( #960db8, 1 );
 		transition: all 0.2s ease-out;
 		width: 100px;
 		height: 100px;
