@@ -27,8 +27,11 @@ public partial class SpawnMenu : Panel
 				var props = body.AddChild<SpawnList>();
 				tabs.SelectedButton = tabs.AddButtonActive( "Props", ( b ) => props.SetClass( "active", b ) );
 
-				var ents = body.AddChild<EntityList>();
-				tabs.AddButtonActive( "Entities", ( b ) => ents.SetClass( "active", b ) );
+				var stash = body.AddChild<StashList>();
+				tabs.AddButtonActive( "Stash", ( b ) => stash.SetClass( "active", b ) );
+
+				//var ents = body.AddChild<EntityList>();
+				//tabs.AddButtonActive( "Entities", ( b ) => ents.SetClass( "active", b ) );
 
 				//var models = body.AddChild<CloudModelList>();
 				//tabs.AddButtonActive( "s&works", ( b ) => models.SetClass( "active", b ) );
