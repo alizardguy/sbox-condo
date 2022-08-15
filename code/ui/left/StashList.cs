@@ -10,7 +10,7 @@ public partial class StashList : Panel
 	VirtualScrollPanel Canvas;
 
 	public StashList()
-	{/*
+	{
 		AddClass( "spawnpage" );
 		AddChild( out Canvas, "canvas" );
 
@@ -36,6 +36,6 @@ public partial class StashList : Panel
 		foreach ( var entry in ents )
 		{
 			Canvas.AddItem( entry );
-		} */
+		}
 	}
 }
