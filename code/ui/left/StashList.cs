@@ -15,8 +15,8 @@ public partial class StashList : Panel
 		AddChild( out Canvas, "canvas" );
 
 		Canvas.Layout.AutoColumns = true;
-		Canvas.Layout.ItemWidth = 100;
-		Canvas.Layout.ItemHeight = 100;
+		Canvas.Layout.ItemWidth = 200;
+		Canvas.Layout.ItemHeight = 200;
 		Canvas.OnCreateCell = ( cell, data ) =>
 		{
 			if ( data is TypeDescription type )

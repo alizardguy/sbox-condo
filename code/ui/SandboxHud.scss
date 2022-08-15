@@ -18,7 +18,7 @@ Health
 CurrentTool
 {
 	position: absolute;
-	background-color: rgba( #3472e6, 0.8 );
+	background-color: rgba( #390947, 0.8 );
 	backdrop-filter: blur( 50px );
 	border-radius: 10px;
 	top: 100px;
@@ -131,8 +131,8 @@ InventoryIcon
 
 	&.active
 	{
-		background-color: rgba( #3472e6, 1 );
-		transition: all 0.1s ease-out;
+		background-color: rgba( #c234e6, 1 );
+		transition: all 0.2s ease-out;
 		width: 100px;
 		height: 100px;
 
