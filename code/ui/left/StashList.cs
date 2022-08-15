@@ -15,27 +15,24 @@ public partial class StashList : Panel
 		AddChild( out Canvas, "canvas" );
 
 		Canvas.Layout.AutoColumns = true;
-		Canvas.Layout.ItemWidth = 200;
-		Canvas.Layout.ItemHeight = 200;
+		Canvas.Layout.ItemWidth = 100;
+		Canvas.Layout.ItemHeight = 100;
+
 		Canvas.OnCreateCell = ( cell, data ) =>
 		{
-			if ( data is TypeDescription type )
-			{
-				var btn = cell.Add.Button( type.Title );
-				btn.AddClass( "icon" );
-				btn.AddEventListener( "onclick", () => ConsoleSystem.Run( "spawn_entity", type.ClassName ) );
-				btn.Style.BackgroundImage = Texture.Load( FileSystem.Mounted, $"/entity/{type.ClassName}.png", false );
-			}
+			var file = (string)data;
+			var panel = cell.Add.Panel( "icon" );
+			panel.AddEventListener( "onclick", () => ConsoleSystem.Run( "spawn", "stashItems/" + file ) );
+			panel.Style.BackgroundImage = Texture.Load( FileSystem.Mounted, $"/stashItems/{file}_c.png", false );
 		};
 
-		var ents = TypeLibrary.GetDescriptions<Entity>()
-									.Where( x => x.HasTag( "spawnable" ) )
-									.OrderBy( x => x.Title )
-									.ToArray();
-
-		foreach ( var entry in ents )
+		foreach ( var file in FileSystem.Mounted.FindFile( "stashItems", "*.vmdl_c.png", true ) )
 		{
-			Canvas.AddItem( entry );
+			if ( string.IsNullOrWhiteSpace( file ) ) continue;
+			if ( file.Contains( "_lod0" ) ) continue;
+			if ( file.Contains( "clothes" ) ) continue;
+
+			Canvas.AddItem( file.Remove( file.Length - 6 ) );
 		}
 	}
 }
