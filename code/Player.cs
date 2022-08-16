@@ -47,7 +47,7 @@ partial class SandboxPlayer : Player
 
 		Clothing.DressEntity( this );
 
-		//Inventory.Add( new PhysGun(), true );
+		Inventory.Add( new PhysGun(), true );
 		//Inventory.Add( new GravGun() );
 		Inventory.Add( new Tool() );
 		//Inventory.Add( new Pistol() );
