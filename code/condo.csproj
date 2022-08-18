@@ -24,8 +24,8 @@
 	</ItemGroup>
 
   <PropertyGroup>
-	<OutputPath>../.vs/output/</OutputPath>
-	<DocumentationFile>../.vs/output/condo.xml</DocumentationFile>
+	<OutputPath>..\..\..\SteamLibrary\steamapps\common\sbox/.vs/output/</OutputPath>
+	<DocumentationFile>..\..\..\SteamLibrary\steamapps\common\sbox/.vs/output/condo.xml</DocumentationFile>
 	<RootNamespace>Sandbox</RootNamespace>
 	<Nullable>disable</Nullable>
   </PropertyGroup>
