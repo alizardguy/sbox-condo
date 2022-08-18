@@ -28,7 +28,7 @@
 
 				tr.Entity.Delete();
 
-				var particle = Particles.Create( "particles/physgun_freeze.vpcf" );
+				var particle = Particles.Create( "particles/physgun_suck.vpcf" );
 				particle.SetPosition( 0, tr.Entity.Position );
 			}
 		}
